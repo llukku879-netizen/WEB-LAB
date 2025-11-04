@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Program 8</title>
+</head>
+ <script>
+    function validateForm() {
+      let name = document.getElementById("name").value.trim();
+      let phone = document.getElementById("phoneNumber").value.trim();
+
+      // Check if name is empty or contains digits
+      if (name === "" || /\d/.test(name)) {
+        alert("Please enter a valid name (letters only).");
+        return false;
+      }
+
+      // Check if phone number has exactly 10 digits
+      if (!/^\d{10}$/.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+<body>
+<div class="card card-primary">
+      <div class="card-header">
+            <h3 class="card-title">User Form</h3>
+</div>
+
+<div class="form-group col-12">
+  <label  class="label">Name:</label>
+  <input type="text" id="name"  class="form-control"  required>
+</div>
+<br>
+<div class="form-group col-12">
+  <label for="phoneNumber" class="col-form-label">Phone Number:</label>
+    <input type="text" id="phoneNumber"required>
+  </div>
+ <br> 
+  <button onclick="validateForm()">Submit</button>
+</body>
+</html>
