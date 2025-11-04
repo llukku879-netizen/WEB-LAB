@@ -1,0 +1,461 @@
+<html>
+
+
+
+<head>
+
+
+<title> registration form</title>
+
+
+<body>
+
+
+
+
+
+<style>
+
+
+
+
+
+.container{
+
+
+background-color: #edebeb;
+
+
+
+
+
+width: auto;
+
+
+border: 2px solid black;
+
+
+}
+
+
+.name-container {
+
+
+  display: flex;
+
+
+  gap: 20px; 
+
+
+}
+
+
+
+
+
+.name {
+
+
+  display: flex;
+
+
+  flex-direction: column; 
+
+
+}
+
+
+.adress-container {
+
+
+margin-bottom: 10px;
+
+
+display: flex;
+
+
+ align-items: center;
+
+
+ }
+
+
+.adress-container label {
+
+
+ min-width: 100px; 
+
+
+ }
+
+
+        textarea {
+
+
+            width: 10%;
+
+
+            
+
+
+              margin-left: 90px;
+
+
+            height: 40px;
+
+
+        }
+
+
+        .radio-group,.checkbox-group {
+
+
+            display: flex;
+
+
+            gap: 30px;
+
+
+            margin-top: 5px;
+
+
+            align-items: flex-start;
+
+
+            margin-left: 40px;
+
+
+        }
+
+
+        
+
+
+ .lang-group{
+
+
+ margin-bottom: 10px;
+
+
+display: flex;
+
+
+ align-items: center;
+
+
+ }
+
+
+ .buttons {
+
+
+            text-align: right;
+
+
+            margin-top: 20px;
+
+
+            margin-right: 200px;
+
+
+        }
+
+
+          .course-select {
+
+
+            display: flex;
+
+
+            align-items: center;
+
+
+            gap: 70px;
+
+
+        }
+
+
+</style>
+
+
+
+
+
+<center>
+
+
+<h1> REGISTRATION FORM </h1>
+
+
+</center>
+
+
+
+
+
+<div class = "main-container">
+
+
+<fieldset  class="container">
+
+
+<legend>user information</legend>
+
+
+<form>
+
+
+<div >
+
+
+<label >Name</label>
+
+
+<select id="title" name="title" required>
+
+
+<option value="Mr">Mr.</option>
+
+
+ <option value="Ms">Ms.</option>
+
+
+  <option value="Dr">Dr.</option>
+
+
+ </select>
+
+
+ <input type="text" required>
+
+
+</div>
+
+
+<br>
+
+
+<div class="name-container">
+
+
+<div class="name"> 
+
+
+<label >phone</label> 
+
+
+<input type="text" required> 
+
+
+<label >email</label>
+
+
+<input type="text" required> </div>
+
+
+</div>
+
+
+</div><br>
+
+
+
+
+
+      <div class="adress-container">
+
+
+            <label for="address">Address</label>
+
+
+            <textarea id="address" name="address"></textarea>
+
+
+        </div>
+
+
+
+
+
+        <div class="adress-container">
+
+
+            <label>Gender</label>
+
+
+            <div class="radio-group">
+
+
+                <div>
+
+
+                    <input type="radio" id="male" name="gender" value="Male">
+
+
+                    <label for="male">Male</label>
+
+
+                </div>
+
+
+                <div>
+
+
+                    <input type="radio" id="female" name="gender" value="Female">
+
+
+                    <label for="female">Female</label>
+
+
+                </div>
+
+
+                <div>
+
+
+                    <input type="radio" id="other" name="gender" value="Other">
+
+
+                    <label for="other">Other</label>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        
+
+
+        
+
+
+ <div class="lang-group">
+
+
+            <label>Languages known</label>
+
+
+            <div class="checkbox-group">
+
+
+                <div>
+
+
+                    <input type="checkbox" id="english" name="languages" value="English">
+
+
+                    <label for="english">English</label>
+
+
+                </div>
+
+
+                <div>
+
+
+                    <input type="checkbox" id="malayalam" name="languages" value="Malayalam">
+
+
+                    <label for="malayalam">Malayalam</label>
+
+
+                </div>
+
+
+                <div>
+
+
+                    <input type="checkbox" id="hindi" name="languages" value="Hindi">
+
+
+                    <label for="hindi">Hindi</label>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        
+
+
+        
+
+
+         <div class="course-select">
+
+
+            <label for="course">Course</label>
+
+
+
+
+
+            <select id="course" name="course">
+
+
+                <option value="">Course</option>
+
+
+                <option value="bca">bca</option>
+
+
+                <option value="mca">mca</option>
+
+
+                <option value="networking">Networking</option>
+
+
+            </select>
+
+
+        </div>
+
+
+
+
+
+        <div class="buttons">
+
+
+            <button type="reset">Reset</button>
+
+
+            <button type="submit">Submit</button>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+
+</fieldset>
+
+
+</body>
+
+
+</head>
+
+
+</html>
